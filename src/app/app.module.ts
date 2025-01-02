@@ -31,16 +31,23 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {MatMomentDateModule} from "@angular/material-moment-adapter";
 import {CoursesModule} from './courses/courses.module';
 
-@NgModule({ declarations: [
-        AppComponent
-    ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
-        BrowserAnimationsModule,
-        MatToolbarModule,
-        MatButtonModule,
-        CoursesModule,
-        AppRoutingModule], providers: [
-        provideHttpClient(withInterceptorsFromDi())
-    ] })
-export class AppModule {
-}
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  bootstrap: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    CoursesModule,
+    AppRoutingModule
+  ],
+  providers: [
+    provideHttpClient(withInterceptorsFromDi())
+  ]
+})
+export class AppModule {}
