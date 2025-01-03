@@ -1,4 +1,5 @@
 import {ComponentFixture, fakeAsync, flush, TestBed, tick, waitForAsync} from '@angular/core/testing';
+import '@types/jasmine';
 import {CoursesModule}                                                   from '../courses.module';
 import {DebugElement} from '@angular/core';
 import {HomeComponent} from './home.component';
