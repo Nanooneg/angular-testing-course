@@ -11,8 +11,8 @@
     "lint": "ng lint",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "build:prod": "ng build --prod",
-    "start:prod": "http-server ./dist -a localhost -p 4200",
+    "build:prod": "ng build --configuration production",
+    "start:prod": "http-server ./dist/angular-testing-course/browser -a localhost -p 4200",
     "build-and-start:prod": "run-s build:prod start:prod",
     "e2e": "start-server-and-test build-and-start:prod http://localhost:4200 cypress:run"
   },
@@ -51,6 +51,7 @@
     "@types/jasmine": "~5.1.5",
     "@types/jasminewd2": "~2.0.13",
     "@types/node": "^22.10.5",
+    "jasmine": "^5.5.0",
     "jasmine-core": "~5.5.0",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "~6.4.4",
@@ -62,6 +63,6 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "start-server-and-test": "^2.0.9",
     "ts-node": "~10.9.2",
-    "typescript": "~5.7.2"
+    "typescript": "^5.6.3"
   }
 }

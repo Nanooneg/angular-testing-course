@@ -1,5 +1,4 @@
 import {ComponentFixture, fakeAsync, flush, TestBed, tick, waitForAsync} from '@angular/core/testing';
-import '@types/jasmine';
 import {CoursesModule}                                                   from '../courses.module';
 import {DebugElement} from '@angular/core';
 import {HomeComponent} from './home.component';
@@ -9,9 +8,6 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {By} from '@angular/platform-browser';
 import {of} from 'rxjs';
 import {click} from '../common/test-utils';
-
-
-
 
 describe('HomeComponent', () => {
 
